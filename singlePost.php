@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#F7F7F7" /> <!-- for android -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>site title</title>
+    <link rel="stylesheet" href="../lib/fonts/fonts.css" />
+    <link rel="stylesheet" href="../lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../lib/js/jquery.min.js"></script>
+  </head>
+  <body class="rtl" >
+    <div class="container">
+        <div class="row" ><!-- menu -->
+            
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark w-100">
+        <span class="navbar-brand title" >عنوان سایت</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.php"><i class="fas fa-home"></i></a></li>
+            <li class="nav-item" ><a  class="nav-link" href="index.php" >صفحه اصلی</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">محصولات</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown1">
+                <a class="dropdown-item" href="">محصول 1</a>
+                <a class="dropdown-item" href="">محصول 2</a>
+                <a class="dropdown-item" href="">محصول 3</a>
+              </div>
+            </li>
+         </ul>
+        </div>
+     </nav>
+    </div><!-- end menu -->
+    
+    
+    <div class="row p-2 bg-light" ><!--newsbar-->
+        <div class="col-md-8 mt-2">
+            <div id="typed-strings">
+                <p>توی سایت ما برنامه‌نویسی رو نه با حفظ کردن کدهای خشک، بلکه با انجام پروژه‌های عملی و چالش‌های روزمره یاد می‌گیری، تا وقتی وارد بازار کار شدی، دقیقاً بدونی که باید چیکار کنی</p>
+                <p>از همون روز اول که ثبت‌نام می‌کنی، یه مسیر یادگیری شخصی‌سازی‌شده برات مشخص می‌شه و توی هر مرحله، منتورها و جامعه کاربری کنارتن تا هیچ سوالی بی‌جواب نمونه و با انگیزه ادامه بدی</p>
+              </div>
+              <span id="typed"></span>
+
+              <script src="../lib/js/typed.min.js" ></script>
+              <script>
+                var typed = new Typed('#typed', {
+                  stringsElement: '#typed-strings',
+                  typeSpeed: 100,
+                  loop:true,
+                });
+              </script>
+        </div>
+        <div class="col-md-4">
+            <form action="search.php">
+            <div class="input-group ">
+              <input type="text" name="search" class="form-control" placeholder="متن خود را وارد کنید">
+              <div class="input-group-append">
+                <button class="btn btn-success" type="submit"> <i class='fas fa-1x fa-search' ></i> جستجو </button>
+              </div>
+            </div>
+            </form>            
+        </div>
+    </div><!--end newsbar-->
+    <div class="row bg-light" ><!--post-->
+        <div class="col-md-8" >
+          <div class="card mb-3">
+            <img class="card-img-top " src="../images/img10.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h1 class="card-title">عنوان مطلب</h1>
+              <p class="card-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+              <p class="card-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+              <p class="card-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+              <p class="card-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+              <p class="card-text"><small class="text-muted">نویسنده: مدیر سایت</small></p>
+            </div>
+          </div><!-- end post -->
+          
+          <div class="card mb-3">
+            <div class="card-body">
+            <form action="" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="uname">نام:</label>
+              <input type="text" class="form-control" id="uname" placeholder="نام خود را وارد کنید" name="name" required>
+              <div class="valid-feedback">صحیح</div>
+              <div class="invalid-feedback">لطفا نام خود را وارد کنید</div>
+            </div>
+            <div class="form-group">
+              <label for="email">ایمیل:</label>
+              <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد کنید" name="email" required>
+              <div class="valid-feedback">صحیح</div>
+              <div class="invalid-feedback">لطفا ایمیل خود را وارد کنید</div>
+            </div>
+            <div class="form-group">
+              <label for="comment">نظر:</label>
+              <textarea class="form-control" id="comment" placeholder="نظر خود را وارد کنید" name="comment" rows="5" required></textarea>
+              <div class="valid-feedback">صحیح</div>
+              <div class="invalid-feedback">لطفا نظر خود را وارد کنید</div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">ارسال نظرات</button>
+          </form>
+          
+          <script>
+          // Disable form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Get the forms we want to add validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+          </div>
+         </div><!-- end comment -->
+          
+          <div class="card mb-3" >
+            <div class="card-body" >
+              <div class="h4" >عبدلستار رحیمی</div>
+              <div class="" >این یک پروژه برای درس طراحی صفحات پیشرفته است</div>
+              <div class="small font-italic" >تاریخ 2026.20.01</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="card mb-3" >
+            <div class="card-header">
+                 آخرین مطالب
+                 </div>
+                       <ul class="list-group list-group-flush">
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 1</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 2</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 3</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 4</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 5</a></li>
+                       </ul>
+                 </div>
+                 
+          <div class="card mb-3" >
+            <div class="card-header">
+                 پر بازدید ترین مطالب
+                 </div>
+                       <ul class="list-group list-group-flush">
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 1</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 2</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 3</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 4</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >عنوان مطلب 5</a></li>
+                       </ul>
+                 </div>
+                 
+          <div class="card mb-3" >
+            <div class="card-header">
+                  آخرین نظرات
+                 </div>
+                       <ul class="list-group list-group-flush">
+                         <li class="list-group-item"><a href="singlePost.php" >دیدگاه شماره 1</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >دیدگاه شماره 2</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >دیدگاه شماره 3</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >دیدگاه شماره 4</a></li>
+                         <li class="list-group-item"><a href="singlePost.php" >دیدگاه شماره 5</a></li>
+                       </ul>
+                 </div>
+                 
+                 <div class="card">
+                 <div class="card-header">
+                  آمار سایت
+                 </div>
+                 <div class="card-body text-center" >
+                  <!-- Statistics by www.1abzar.com --->
+                    <script type="text/javascript" src="https://1abzar.ir/abzar/tools/stat/amar-v3.php?color=333333&bg=F7F4D9&kc=888888&kadr=1&amar=rbz08sil9mwx8ueoeaiaxirn0etjyz&show=1|1|1|1|0|1|1"></script><div style="display:none"><h3><a href="https://www.1abzar.com/abzar/stat.php">&#1570;&#1605;&#1575;&#1585;&#1711;&#1740;&#1585; &#1608;&#1576;&#1604;&#1575;&#1711;</a></h3></div>
+                  <!-- Statistics by www.1abzar.com --->
+                 </div>
+                    
+                 </div>
+                 
+            </div>
+            
+            
+      
+    </div><!-- end post -->
+    
+    <div class="row bg-dark p-2" ><!-- footer -->
+        <div class="col-md-6">
+          <div class="h4 text-light" >درباره ما</div>
+          <p class="text-light text-justify"> .سلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کرد </p>
+        </div>
+        <div class="col-md-6">
+          <div class="h4 text-light" >تماس با ما</div>
+          <div class="text-light">
+          برای اینکه با ما تماس بگیرید، از راه های زیر اقدام کنید:
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-transparent"><a class="text-light" href="tel:0912245"  ><i class="fas fa-phone"></i> 09177841239</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="sms:0912457?body=sample text" ><i class="fas fa-comment-dots"></i> 09177841239</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="mailto:sample@mail.com?subject=subject text &body=sample text" ><i class="fas fa-at"></i> Abdulsattar@gmail.com</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="https://telegram.me/your username" ><i class="fab fa-telegram"></i> Abdulsattar123</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="https://wa.me/phone number" ><i class="fab fa-whatsapp-square"></i> 09175485454</a></li>
+          </ul>
+          </div>
+          
+        </div>
+        <div class="clo-md-12 text-light small" >
+          کلیه حقوق برای این سایت محفوظ می باشد
+        </div> 
+    </div><!-- end footer -->
+
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

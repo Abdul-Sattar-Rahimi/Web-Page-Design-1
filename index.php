@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#F7F7F7" /> <!-- for android -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>site title</title>
+    <link rel="stylesheet" href="../lib/fonts/fonts.css" />
+    <link rel="stylesheet" href="../lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../lib/js/jquery.min.js"></script>
+  </head>
+  <body class="rtl" >
+    <div class="container">
+        <div class="row" ><!-- menu -->
+            
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark w-100">
+        <span class="navbar-brand title" >عنوان سایت</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-home"></i></a></li>
+            <li class="nav-item" ><a  class="nav-link" href="" >صفحه اصلی</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">محصولات</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown1">
+                <a class="dropdown-item" href="">محصول 1</a>
+                <a class="dropdown-item" href="">محصول 2</a>
+                <a class="dropdown-item" href="">محصول 3</a>
+              </div>
+            </li>
+         </ul>
+        </div>
+     </nav>
+    </div><!-- end menu -->
+    
+    <div class="row"  ><!-- slider -->
+              <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../images/img23.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Title Caption</h5>
+              <p>carousel caption text </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../images/reflections11.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Title Caption</h5>
+              <p>carousel caption text </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../images/reflections13.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Title Caption</h5>
+              <p>carousel caption text </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div><!-- end slider  -->
+    <div class="row p-2 bg-light" ><!--newsbar-->
+        <div class="col-md-8 mt-2">
+            <div id="typed-strings">
+                <p>توی سایت ما برنامه‌نویسی رو نه با حفظ کردن کدهای خشک، بلکه با انجام پروژه‌های عملی و چالش‌های روزمره یاد می‌گیری، تا وقتی وارد بازار کار شدی، دقیقاً بدونی که باید چیکار کنی</p>
+                <p>از همون روز اول که ثبت‌نام می‌کنی، یه مسیر یادگیری شخصی‌سازی‌شده برات مشخص می‌شه و توی هر مرحله، منتورها و جامعه کاربری کنارتن تا هیچ سوالی بی‌جواب نمونه و با انگیزه ادامه بدی</p>
+              </div>
+              <span id="typed"></span>
+
+              <script src="../lib/js/typed.min.js" ></script>
+              <script>
+                var typed = new Typed('#typed', {
+                  stringsElement: '#typed-strings',
+                  typeSpeed: 100,
+                  loop:true,
+                });
+              </script>
+        </div>
+        <div class="col-md-4">
+            <form action="search.php">
+            <div class="input-group ">
+              <input type="text" name="search" class="form-control" placeholder="متن خود را وارد کنید">
+              <div class="input-group-append">
+                <button class="btn btn-success" type="submit"> <i class='fas fa-1x fa-search' ></i> جستجو </button>
+              </div>
+            </div>
+            </form>            
+        </div>
+    </div><!--end newsbar-->
+    <div class="row bg-light" ><!--post-->
+        <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" >
+              <img class="card-img-top" src="../images/img9.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">عنوان مطلب</h5>
+                <span class="small font-italic" >تاریخ: 20-17-2026</span>
+                <span class="small font-italic" >  بازدید: 42  </span>
+                <p class="card-text text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی م
+                ورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+                <a href="singlePost.php" class="btn btn-primary">ادامه مطلب</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" >
+              <img class="card-img-top" src="../images/img10.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">عنوان مطلب</h5>
+                <span class="small font-italic" >تاریخ: 20-17-2026</span>
+                <span class="small font-italic" >  بازدید: 42  </span>
+                <p class="card-text text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی م
+                ورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+                <a href="singlePost.php" class="btn btn-primary">ادامه مطلب</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" >
+              <img class="card-img-top" src="../images/img11.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">عنوان مطلب</h5>
+                <span class="small font-italic" >تاریخ: 20-17-2026</span>
+                <span class="small font-italic" >  بازدید: 42  </span>
+                <p class="card-text text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی م
+                ورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+                <a href="singlePost.php" class="btn btn-primary">ادامه مطلب</a>
+              </div>
+            </div>
+        </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" >
+              <img class="card-img-top" src="../images/img9.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">عنوان مطلب</h5>
+                <span class="small font-italic" >تاریخ: 20-17-2026</span>
+                <span class="small font-italic" >  بازدید: 42  </span>
+                <p class="card-text text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی م
+                ورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+                <a href="singlePost.php" class="btn btn-primary">ادامه مطلب</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" >
+              <img class="card-img-top" src="../images/img10.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">عنوان مطلب</h5>
+                <span class="small font-italic" >تاریخ: 20-17-2026</span>
+                <span class="small font-italic" >  بازدید: 42  </span>
+                <p class="card-text text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی م
+                ورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+                <a href="singlePost.php" class="btn btn-primary">ادامه مطلب</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3">
+            <div class="card" >
+              <img class="card-img-top" src="../images/img11.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">عنوان مطلب</h5>
+                <span class="small font-italic" >تاریخ: 20-17-2026</span>
+                <span class="small font-italic" >  بازدید: 42  </span>
+                <p class="card-text text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی م
+                ورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+                <a href="singlePost.php" class="btn btn-primary">ادامه مطلب</a>
+              </div>
+            </div>
+        </div>
+      
+    </div><!-- end post -->
+    
+    <div class="row bg-dark p-2" ><!-- footer -->
+        <div class="col-md-6">
+          <div class="h4 text-light" >درباره ما</div>
+          <p class="text-light text-justify"> .سلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کردسلام.اینجا متن را وارد خواهم کرد </p>
+        </div>
+        <div class="col-md-6">
+          <div class="h4 text-light" >تماس با ما</div>
+          <div class="text-light">
+          برای اینکه با ما تماس بگیرید، از راه های زیر اقدام کنید:
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-transparent"><a class="text-light" href="tel:0912245"  ><i class="fas fa-phone"></i> 09177841239</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="sms:0912457?body=sample text" ><i class="fas fa-comment-dots"></i> 09177841239</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="mailto:sample@mail.com?subject=subject text &body=sample text" ><i class="fas fa-at"></i> Abdulsattar@gmail.com</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="https://telegram.me/your username" ><i class="fab fa-telegram"></i> Abdulsattar123</a></li>
+            <li class="list-group-item bg-transparent"><a class="text-light" href="https://wa.me/phone number" ><i class="fab fa-whatsapp-square"></i> 09175485454</a></li>
+          </ul>
+          </div>
+          
+        </div>
+        <div class="clo-md-12 text-light small" >
+          کلیه حقوق برای این سایت محفوظ می باشد
+        </div> 
+    </div><!-- end footer -->
+
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
