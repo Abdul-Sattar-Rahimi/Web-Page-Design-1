@@ -79,5 +79,4 @@
 - List group:
   https://getbootstrap.com/docs/4.6/components/list-group/
 
-  https://fontawesome.com/icons
 
